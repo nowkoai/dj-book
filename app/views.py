@@ -4,7 +4,7 @@ import json
 import requests
 from .forms import SearchForm
 
-SEARCH_URL = 'https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?format=json&applicationId=1075608449787548374'
+SEARCH_URL = 'https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?format=json&applicationId=楽天APIキーを入力'
 
 def get_api_data(params):
     api = requests.get(SEARCH_URL, params=params).text
